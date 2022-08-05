@@ -1,0 +1,11 @@
+- name: Installing nodejs
+  hosts: all
+  remote_user: ubuntu
+  become: 'yes'
+  
+
+  tasks:
+    - name: Ensure nodejs is at the Latest Version
+      apt:
+        name: nodejs
+        state: latest

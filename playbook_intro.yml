@@ -1,0 +1,9 @@
+- name: Introduction Ansible Playbooks
+  hosts: all
+  remote_user: ubuntu
+  become: 'yes'
+  
+
+  tasks:
+    - name: Checking Connection via Ping
+      ping:
